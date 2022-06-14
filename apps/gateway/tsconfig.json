@@ -1,0 +1,12 @@
+{
+  "extends": "tsconfig/services.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "baseUrl": "./src",
+    "outDir": "./dist"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

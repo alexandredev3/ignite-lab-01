@@ -1,0 +1,20 @@
+{
+  "name": "ignite-lab",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alexandredev3/ignite-lab.git",
+  "author": "alexandredev3 <costasalexandre511@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "turbo": "^1.2.16"
+  }
+}

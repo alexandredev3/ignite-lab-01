@@ -1,0 +1,31 @@
+web:build: cache hit, replaying output [2m775813445f680c18[0m
+[32mweb:build: [0m$ next build
+[32mweb:build: [0minfo  - Loaded env from /workspace/ignite-lab/apps/web/.env
+[32mweb:build: [0minfo  - Checking validity of types...
+[32mweb:build: [0minfo  - Creating an optimized production build...
+[32mweb:build: [0m
+[32mweb:build: [0mwarn - No utility classes were detected in your source files. If this is unexpected, double-check the `content` option in your Tailwind CSS configuration.
+[32mweb:build: [0mwarn - https://tailwindcss.com/docs/content-configuration
+[32mweb:build: [0minfo  - Compiled successfully
+[32mweb:build: [0minfo  - Collecting page data...
+[32mweb:build: [0minfo  - Generating static pages (0/2)
+[32mweb:build: [0minfo  - Generating static pages (2/2)
+[32mweb:build: [0minfo  - Finalizing page optimization...
+[32mweb:build: [0m
+[32mweb:build: [0mPage                                       Size     First Load JS
+[32mweb:build: [0m┌ λ /                                      250 B          79.5 kB
+[32mweb:build: [0m├   /_app                                  0 B            79.3 kB
+[32mweb:build: [0m├ ○ /404                                   194 B          79.5 kB
+[32mweb:build: [0m├ λ /api                                   0 B            79.3 kB
+[32mweb:build: [0m├ λ /api/auth/[...auth0]                   0 B            79.3 kB
+[32mweb:build: [0m└ λ /app                                   51.5 kB         131 kB
+[32mweb:build: [0m+ First Load JS shared by all              79.3 kB
+[32mweb:build: [0m  ├ chunks/framework-25e273bc0832f852.js   44.9 kB
+[32mweb:build: [0m  ├ chunks/main-31395b0cae04eca5.js        28.2 kB
+[32mweb:build: [0m  ├ chunks/pages/_app-f83147dc864988ae.js  5.17 kB
+[32mweb:build: [0m  ├ chunks/webpack-df4cf1c8d23aa877.js     1.03 kB
+[32mweb:build: [0m  └ css/b5744e009db50c44.css               1.37 kB
+[32mweb:build: [0m
+[32mweb:build: [0mλ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+[32mweb:build: [0m○  (Static)  automatically rendered as static HTML (uses no initial props)
+[32mweb:build: [0m
