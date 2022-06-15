@@ -8,8 +8,7 @@ import {
   Resolver,
 } from '@nestjs/graphql';
 
-import { AuthorizationGuard } from 'http/auth/authorization.guard';
-import { AuthUser, CurrentUser } from 'http/auth/current-user';
+import { AuthorizationGuard, AuthUser, CurrentUser } from 'auth';
 
 import { Purchase } from '../models/purchase';
 import { Product } from '../models/product';
