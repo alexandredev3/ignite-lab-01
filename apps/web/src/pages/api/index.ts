@@ -17,6 +17,8 @@ export default async function handler(
 ) {
   const { accessToken } = await getAccessToken(request, response);
 
+  console.log(accessToken);
+
   return httpProxyMiddleware(request, response, {
     target: SCHEMA, // to where we going to pass the new headers.
     headers: {

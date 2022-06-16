@@ -10,7 +10,9 @@ import {
 
 export type ApolloClientContext = GetServerSidePropsContext;
 
-export const withApollo = (Component: NextPage) => {
+const SCHEMA = process.env.NEXT_PUBLIC_GRAPHQL_SCHEMA;
+
+export const withPublicApollo = (Component: NextPage) => {
   const Provider = (props: any) => {
     // this props come from the getServerSideProps function.
     // in getServerSideProps we going to return the apolloState.
@@ -38,11 +40,8 @@ export const getApolloClient = (
 ) => {
   const cache = new InMemoryCache().restore(ssrCache ?? {}); // we can use otheres cache strategies.
 
-  // We won't make the request to our graphql api directly.
-  // We will make the request to our proxy.
-  // that proxy will make the request to our graphql api.
   const httpLink = createHttpLink({
-    uri: "http://localhost:3000/api",
+    uri: SCHEMA,
     fetch, // we're saying to use the browser api fetch, we can use axios, request, undici, etc...
   });
 
