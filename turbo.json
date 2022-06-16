@@ -3,7 +3,7 @@
   "baseBranch": "origin/main",
   "pipeline": {
     "migrate": {
-      "cache": false
+      "cache": true
     },
     "dev": {
       "dependsOn": ["migrate"],

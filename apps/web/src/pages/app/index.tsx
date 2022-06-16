@@ -1,4 +1,8 @@
-import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0";
+import {
+  useUser,
+  withPageAuthRequired,
+  getAccessToken,
+} from "@auth0/nextjs-auth0";
 
 import { withApollo } from "lib/withApollo";
 import {
@@ -28,6 +32,10 @@ function Home({ data }) {
 export const getServerSideProps = withPageAuthRequired({
   getServerSideProps: async (ctx) => {
     // return getServerPageGetProducts({}, ctx);
+
+    const token = await getAccessToken(ctx.req, ctx.res);
+
+    console.log("token --->", token);
 
     return {
       props: {},

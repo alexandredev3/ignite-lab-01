@@ -1,13 +1,11 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { UnauthorizedException, UseGuards } from '@nestjs/common';
-
-import { AuthUser, CurrentUser } from 'http/auth/current-user';
+import { AuthUser, CurrentUser, AuthorizationGuard } from '@ignite/auth';
 
 import { Course } from '../models/course';
 
 import { CreateCourseInput } from '../inputs/create-course-input';
 
-import { AuthorizationGuard } from 'http/auth/authorization.guard';
 import { CoursesService } from 'services/courses.service';
 import { EnrollmentsService } from 'services/enrollments.service';
 import { StudentsService } from 'services/students.service';
