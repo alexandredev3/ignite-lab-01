@@ -10,7 +10,8 @@
       "cache": false
     },
     "build": {
-      "cache": true
+      "outputs": ["dist/**/*", ".next/**/*"],
+      "dependsOn": ["^build"]
     }
   }
 }

@@ -3,7 +3,7 @@
     "baseUrl": "./src",
     "forceConsistentCasingInFileNames": true
   },
-  "extends": "tsconfig/nextjs.json",
+  "extends": "@ignite/tsconfig/nextjs.json",
   "include": [
     "next-env.d.ts",
     "**/*.ts",

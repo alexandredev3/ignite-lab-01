@@ -7,11 +7,9 @@ import {
   ResolveField,
   Resolver,
 } from '@nestjs/graphql';
-
-import { AuthorizationGuard, AuthUser, CurrentUser } from 'auth';
+import { AuthorizationGuard, AuthUser, CurrentUser } from '@ignite/auth';
 
 import { Purchase } from '../models/purchase';
-import { Product } from '../models/product';
 
 import { CreatePurchaseInput } from '../inputs/create-purchase-input';
 

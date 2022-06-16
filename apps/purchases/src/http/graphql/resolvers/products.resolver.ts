@@ -1,6 +1,6 @@
 import { UseGuards } from '@nestjs/common';
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
-import { AuthorizationGuard } from 'auth';
+import { AuthorizationGuard } from '@ignite/auth';
 
 import { Product } from 'http/graphql/models/product';
 

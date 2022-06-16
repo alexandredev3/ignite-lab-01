@@ -3,8 +3,8 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2017",
-    "baseUrl": "./src",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "baseUrl": "./src"
   },
   "exclude": [
     "node_modules"

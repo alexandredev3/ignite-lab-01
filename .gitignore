@@ -1,7 +1,12 @@
 /node_modules
 /.env
+/.env.local
 /.next
 /dist
 
 /apps/*/node_modules
 /packages/*/node_modules
+
+.env
+
+.turbo
