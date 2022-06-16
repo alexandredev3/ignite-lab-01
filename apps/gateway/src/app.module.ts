@@ -26,7 +26,7 @@ import { GraphQLModule } from "@nestjs/graphql";
               name: "classrooms",
               url: process.env.CLASSROOMS_URL,
             },
-          ],
+          ]
         }),
         buildService: ({ url }) => {
           return new RemoteGraphQLDataSource({

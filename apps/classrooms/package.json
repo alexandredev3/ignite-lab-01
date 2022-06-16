@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "prebuild": "rimraf dist",
+    "prebuild": "yarn clean",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\"",
     "start": "nest start",
@@ -14,7 +14,7 @@
     "migrate": "prisma migrate dev",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
+    "clean": "rimraf dist && rimraf .turbo && rimraf node_modules"
   },
   "dependencies": {
     "@apollo/federation": "^0.36.1",

@@ -1,0 +1,33 @@
+{
+  "collection": "@nestjs/schematics",
+  "monorepo": true,
+  "projects": {
+    "classrooms": {
+      "type": "application",
+      "root": "apps/classrooms",
+      "entryFile": "main",
+      "sourceRoot": "apps/classrooms/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/classrooms/tsconfig.json"
+      }
+    },
+    "purchases": {
+      "type": "application",
+      "root": "apps/purchases",
+      "entryFile": "main",
+      "sourceRoot": "apps/purchases/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/purchases/tsconfig.json"
+      }
+    },
+    "gateway": {
+      "type": "application",
+      "root": "apps/gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gateway/tsconfig.json"
+      }
+    }
+  }
+}
