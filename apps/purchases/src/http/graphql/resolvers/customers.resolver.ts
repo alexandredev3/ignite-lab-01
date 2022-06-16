@@ -1,8 +1,6 @@
 import { UseGuards } from '@nestjs/common';
 import { Parent, Query, ResolveField, Resolver, ResolveReference } from '@nestjs/graphql';
-
-import { AuthorizationGuard } from 'http/auth/authorization.guard';
-import { AuthUser, CurrentUser } from 'http/auth/current-user';
+import { AuthorizationGuard, CurrentUser, AuthUser } from '@ignite/auth';
 
 import { CustomersService } from 'services/customers.service';
 import { PurchasesService } from 'services/purchases.service';

@@ -27,7 +27,7 @@ import { CustomersService } from 'services/customers.service';
       autoSchemaFile: path.resolve(process.cwd(), 'src/schema.gql'),
       driver: ApolloFederationDriver,
     }),
-  ], // it reads the .env
+  ],
   providers: [
     ProductsResolver,
     PurchasesResolver,

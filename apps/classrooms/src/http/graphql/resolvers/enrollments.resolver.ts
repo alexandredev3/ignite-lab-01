@@ -1,7 +1,6 @@
 import { UseGuards } from '@nestjs/common';
 import { Parent, Query, ResolveField, Resolver } from '@nestjs/graphql';
-
-import { AuthorizationGuard } from 'http/auth/authorization.guard';
+import { AuthorizationGuard } from '@ignite/auth';
 
 import { Enrollment } from '../models/enrollment';
 import { Course } from '../models/course';

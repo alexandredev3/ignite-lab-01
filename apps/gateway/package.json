@@ -1,5 +1,5 @@
 {
-  "name": "gateway",
+  "name": "@ignite/gateway",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -46,6 +46,6 @@
     "ts-node": "^10.0.0",
     "tsconfig-paths": "^3.10.1",
     "typescript": "^4.3.5",
-    "tsconfig": "*"
+    "@ignite/tsconfig": "*"
   }
 }

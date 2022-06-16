@@ -1,5 +1,5 @@
 {
-  "name": "classrooms",
+  "name": "@ignite/classrooms",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -34,7 +34,8 @@
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
-    "slugify": "^1.6.5"
+    "slugify": "^1.6.5",
+    "@ignite/auth": "*"
   },
   "devDependencies": {
     "@nestjs/cli": "^8.0.0",
@@ -53,6 +54,6 @@
     "ts-node": "^10.0.0",
     "tsconfig-paths": "^3.10.1",
     "typescript": "^4.3.5",
-    "tsconfig": "*"
+    "@ignite/tsconfig": "*"
   }
 }

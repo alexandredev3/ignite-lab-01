@@ -3,14 +3,15 @@
   "baseBranch": "origin/main",
   "pipeline": {
     "migrate": {
-      "cache": false
+      "cache": true
     },
     "dev": {
       "dependsOn": ["migrate"],
       "cache": false
     },
     "build": {
-      "cache": true
+      "outputs": ["dist/**/*", ".next/**/*"],
+      "dependsOn": ["^build"]
     }
   }
 }
