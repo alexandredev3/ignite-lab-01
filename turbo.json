@@ -6,12 +6,17 @@
       "cache": true
     },
     "dev": {
-      "dependsOn": ["migrate"],
-      "cache": false
+      "dependsOn": ["$AUTH0_AUDIENCE", "$AUTH0_DOMAIN"],
+      "cache": false,
+      "outputMode": "full"
     },
     "build": {
       "outputs": ["dist/**/*", ".next/**/*"],
       "dependsOn": ["^build"]
+    },
+    "clean": {
+      "cache": false
     }
-  }
+  },
+  "globalDependencies": [".env.local"]
 }

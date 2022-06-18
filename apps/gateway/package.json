@@ -17,7 +17,7 @@
     "clean": "rimraf dist && rimraf .turbo && rimraf node_modules"
   },
   "dependencies": {
-    "@apollo/gateway": "^0.48.3",
+    "@apollo/gateway": "^2.0.5",
     "@nestjs/apollo": "^10.0.9",
     "@nestjs/common": "^8.0.0",
     "@nestjs/config": "^2.0.0",
@@ -31,6 +31,7 @@
     "rxjs": "^7.2.0"
   },
   "devDependencies": {
+    "@ignite/tsconfig": "*",
     "@nestjs/cli": "^8.0.0",
     "@nestjs/schematics": "^8.0.0",
     "@types/express": "^4.17.13",
@@ -46,7 +47,6 @@
     "ts-loader": "^9.2.3",
     "ts-node": "^10.0.0",
     "tsconfig-paths": "^3.10.1",
-    "typescript": "^4.3.5",
-    "@ignite/tsconfig": "*"
+    "typescript": "^4.3.5"
   }
 }

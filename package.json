@@ -11,12 +11,15 @@
   "author": "alexandredev3 <costasalexandre511@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "turbo run dev --no-cache --filter=@ignite/purchases...",
-    "build": "turbo run build",
+    "dev": "env-cmd --file .env.local turbo run dev --no-cache --filter=!gateway",
+    "build": "turbo run build --filter=!web",
     "clean": "turbo run clean"
   },
   "devDependencies": {
-    "turbo": "^1.2.16",
-    "@nestjs/cli": "^8.0.0"
+    "@nestjs/cli": "^8.0.0",
+    "turbo": "^1.2.16"
+  },
+  "dependencies": {
+    "env-cmd": "^10.1.0"
   }
 }

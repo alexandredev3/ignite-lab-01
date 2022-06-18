@@ -35,7 +35,8 @@
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
     "slugify": "^1.6.5",
-    "@ignite/auth": "*"
+    "@ignite/auth": "*",
+    "@ignite/gateway": "*"
   },
   "devDependencies": {
     "@nestjs/cli": "^8.0.0",
