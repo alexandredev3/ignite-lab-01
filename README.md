@@ -20,7 +20,7 @@
 <img src="./.github/assets/diagram.png" />
 
 ## :page_facing_up: Description
-Ignite Lab is a course platform that was built using the [microservice architecture](https://en.wikipedia.org/wiki/Microservices).
+Ignite Lab is an online training platform that was built using the [microservice architecture](https://en.wikipedia.org/wiki/Microservices).
 
 ## 🛠 Tools
 Tools that were used to build this project:
@@ -29,6 +29,7 @@ Tools that were used to build this project:
 - [Node.js](https://nodejs.org/)
 - [Nest.js](https://nestjs.com/)
 - [Prisma](https://www.prisma.io/)
+- [Auth0](https://auth0.com/)
 - [Apache Kafka](https://kafka.apache.org/intro)
 - [React.js](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
